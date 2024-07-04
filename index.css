@@ -1,0 +1,9 @@
+.title{
+    text-align: center;
+}
+.text{
+    width: 65%;
+    margin: 30px auto;
+    display: block;
+    height: 120px;
+}
