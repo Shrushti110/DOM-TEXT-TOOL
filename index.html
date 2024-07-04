@@ -9,14 +9,28 @@
 <body>
     <h1 class="title">Text Tool</h1>
     <input type="text" class="text" id="text"/>
-    <p></p>
+    <p id="result" class="text">
+
+    </p>
 
 
     <div class="btn-container">
-        <button class="action-btn">UPPERCASE</button>
+        <button class="action-btn" onclick="makeUppercase()">UPPERCASE</button>
         <button class="action-btn">lowercase</button>
         <button class="action-btn">Character Count</button>
         <button class="action-btn">Word Count</button>
     </div>
+
+    <script>
+        function makeUppercase(){
+            const inputElement = document.getElementById("text")
+            const resultElement = document.getElementById("result")
+
+            resultElement.innerText = inputElement.value.toUpperCase()
+            //const inputText = inputElement.ariaValueMax
+
+
+        }
+    </script>
 </body>
 </html>
