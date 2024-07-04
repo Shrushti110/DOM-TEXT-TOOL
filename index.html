@@ -16,20 +16,32 @@
 
     <div class="btn-container">
         <button class="action-btn" onclick="makeUppercase()">UPPERCASE</button>
-        <button class="action-btn">lowercase</button>
-        <button class="action-btn">Character Count</button>
+        <button class="action-btn" onclick="makeLowerCase()">lowercase</button>
+        <button class="action-btn" onclick="charCount()">Character Count</button>
         <button class="action-btn">Word Count</button>
     </div>
 
     <script>
+        //FUNCTION FOR UPPERCASE//
         function makeUppercase(){
             const inputElement = document.getElementById("text")
             const resultElement = document.getElementById("result")
 
             resultElement.innerText = inputElement.value.toUpperCase()
-            //const inputText = inputElement.ariaValueMax
+        }
+        //FUNCTION FOR LOWERCSAE//
+        function makeLowerCase(){
+            const inputElement = document.getElementById("text")
+            const resultElement = document.getElementById("result")
 
+            resultElement.innerText = inputElement.value.toLowerCase()
+        }
+        //FUNCTION FOR CHARACTER COUNT//
+        function charCount(){
+            const inputElement = document.getElementById("text")
+            const resultElement = document.getElementById("result")
 
+            resultElement.innerText =` Total Characters: ${inputElement.value.length}`
         }
     </script>
 </body>
